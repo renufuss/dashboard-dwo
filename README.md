@@ -16,3 +16,5 @@ Tutorial menjalankan dashboard DWO
 14.ketik "php spark serve --port 8083"
 15.Buka Website "http://localhost:8083"
 16.Selesai!
+
+#JIKA TERJADI ERROR PADA JDBC COPY FILE "mysql-connector-j-8.0.31.jar" DARI FOLDER OLAP DWO KE FOLDER xampp/tomcat/lib#
