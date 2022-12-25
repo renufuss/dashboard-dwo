@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<Schema name="whawFactSales">
+<!--Product, address, time, sales person, orderQty, unit price, line total-->
+<Cube name="Sales" defaultMeasure="Line Total">
+    <table name="FactSales"/>
+   
+    <Dimension name="Product" foreignKey ="productID">
+        <Hierarchy hasAll="true" allMemberName="All Product" primaryKey ="productID">
+            <Table name="dimproduct"/>
+            <Level name="CategorySubcategory" column="category"/>
+            <Level name="Product Color" column="color"/>    
+            <Level name="Product Name" column="name"/>
+            <Property name="Days to Manufacture" column="daystomanufacture"/>
+            <Property name="Standard Cost" column="standardCost"/>
+            <Property name="Product Color" column="size"/>
+            
+        </Hierarchy>
+    </Dimension>
+
+      <Dimension name="Time" foreignKey="timeID">
+        <Hierarchy hasAll="true" allMemberName="All Times" primaryKey="timeID">
+            <Table name="dimtime"/>
+            <Level name="Year" column="year" type="Numeric" uniqueMembers="true" levelType="TimeYears"/>
+            <Level name="Month" column="month" uniqueMembers="false" type="Numeric" levelType="TimeMonths"/>
+            <Level name="Date" column="date" uniqueMembers="false" type="Numeric" levelType="TimeDays"/>
+        </Hierarchy>
+    </Dimension>
+
+    <Dimension name="Address Location" foreignKey="addressID">
+        <Hierarchy hasAll="true" allMemberName="All Address Location" primaryKey ='addressID'>
+            <Table name="dimaddress"/>
+            <Level name="Address ID" column="addressID"/>
+            <level name="Territory ID" column="territoryID"/>
+            <level name="Country Name" column="country"/> 
+            <level name="City Name" column="city"/>
+            <level name="Address Line" column="AddressLine"/>
+        </Hierarchy>
+    </Dimension>
+
+    <Dimension name="sales Person" foreignKey="salesPersonID">
+        <Hierarchy hasAll="True" allMemberName="All Sales Person" primaryKey="salesPersonID">
+            <Table name="dimsalesperson"/>
+            <level name="Sales Person ID" column="salesPersonID"/>
+            <level name="Territory ID" column="territoryID"/>
+            <Property name="Sales Quota" column="salesQuota" type="Numeric"/>
+        </Hierarchy>
+    </Dimension>
+
+    <Measure name="Order Quantity" column="orderQty" aggregator="sum" formatString="Standard"/>
+    <Measure name="Unit Price" column="unitPrice" aggregator="avg" formatString="Standard"/>
+    <Measure name="Line Total" column="lineTotal" aggregator="sum" formatString="Standard"/>
+
+</Cube>
+</Schema>

@@ -1,0 +1,262 @@
+ERROR - 2022-12-19 22:24:52 --> mysqli_sql_exception: Table 'dbdwofp.fact_sales' doesn't exist in F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*)...', 0)
+#1 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*)...')
+#2 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*)...')
+#3 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', Array, false)
+#4 F:\Project\CodeIgniter\dashboard-dwo\app\Models\SalesModel.php(33): CodeIgniter\Database\BaseBuilder->countAllResults()
+#5 F:\Project\CodeIgniter\dashboard-dwo\app\Controllers\Sales.php(28): App\Models\SalesModel->totalSales()
+#6 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Sales->address()
+#7 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#8 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\Project\CodeIgniter\dashboard-dwo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('F:\\Project\\Code...')
+#11 {main}
+CRITICAL - 2022-12-19 22:24:52 --> Table 'dbdwofp.fact_sales' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT COUNT(*) AS `numrows`
+FROM `fact_sales`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT COUNT(*) AS `numrows`
+FROM `fact_sales`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT COUNT(*) AS `numrows`
+FROM `fact_sales`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1669): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*) AS `numrows`
+FROM `fact_sales`', [], false)
+ 5 APPPATH\Models\SalesModel.php(33): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 6 APPPATH\Controllers\Sales.php(28): App\Models\SalesModel->totalSales()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Sales->address()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-19 22:39:03 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT DISTINCT country FROM dimaddress
+FROM `factsales`' at line 1 in F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT SELECT D...', 0)
+#1 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SELECT D...')
+#2 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SELECT D...')
+#3 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT SELECT D...', Array, false)
+#4 F:\Project\CodeIgniter\dashboard-dwo\app\Models\SalesModel.php(43): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\Project\CodeIgniter\dashboard-dwo\app\Controllers\Sales.php(26): App\Models\SalesModel->showCountry()
+#6 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Sales->address()
+#7 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#8 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\Project\CodeIgniter\dashboard-dwo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('F:\\Project\\Code...')
+#11 {main}
+CRITICAL - 2022-12-19 22:39:03 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT DISTINCT country FROM dimaddress
+FROM `factsales`' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT SELECT DISTINCT country FROM dimaddress
+FROM `factsales`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SELECT DISTINCT country FROM dimaddress
+FROM `factsales`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SELECT DISTINCT country FROM dimaddress
+FROM `factsales`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT SELECT DISTINCT country FROM dimaddress
+FROM `factsales`', [], false)
+ 5 APPPATH\Models\SalesModel.php(43): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Sales.php(26): App\Models\SalesModel->showCountry()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Sales->address()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-19 22:39:39 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT DISTINCT country FROM dimaddress
+FROM `dimaddress`' at line 1 in F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT SELECT D...', 0)
+#1 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SELECT D...')
+#2 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SELECT D...')
+#3 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT SELECT D...', Array, false)
+#4 F:\Project\CodeIgniter\dashboard-dwo\app\Models\SalesModel.php(43): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\Project\CodeIgniter\dashboard-dwo\app\Controllers\Sales.php(26): App\Models\SalesModel->showCountry()
+#6 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Sales->address()
+#7 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#8 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\Project\CodeIgniter\dashboard-dwo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('F:\\Project\\Code...')
+#11 {main}
+CRITICAL - 2022-12-19 22:39:39 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT DISTINCT country FROM dimaddress
+FROM `dimaddress`' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT SELECT DISTINCT country FROM dimaddress
+FROM `dimaddress`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SELECT DISTINCT country FROM dimaddress
+FROM `dimaddress`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SELECT DISTINCT country FROM dimaddress
+FROM `dimaddress`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT SELECT DISTINCT country FROM dimaddress
+FROM `dimaddress`', [], false)
+ 5 APPPATH\Models\SalesModel.php(43): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Sales.php(26): App\Models\SalesModel->showCountry()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Sales->address()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-19 22:40:39 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT DISTINCT country
+FROM `dimaddress`' at line 1 in F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT SELECT D...', 0)
+#1 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SELECT D...')
+#2 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SELECT D...')
+#3 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT SELECT D...', Array, false)
+#4 F:\Project\CodeIgniter\dashboard-dwo\app\Models\SalesModel.php(43): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\Project\CodeIgniter\dashboard-dwo\app\Controllers\Sales.php(26): App\Models\SalesModel->showCountry()
+#6 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Sales->address()
+#7 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#8 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\Project\CodeIgniter\dashboard-dwo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('F:\\Project\\Code...')
+#11 {main}
+CRITICAL - 2022-12-19 22:40:39 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT DISTINCT country
+FROM `dimaddress`' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT SELECT DISTINCT country
+FROM `dimaddress`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SELECT DISTINCT country
+FROM `dimaddress`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SELECT DISTINCT country
+FROM `dimaddress`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT SELECT DISTINCT country
+FROM `dimaddress`', [], false)
+ 5 APPPATH\Models\SalesModel.php(43): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Sales.php(26): App\Models\SalesModel->showCountry()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Sales->address()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-19 22:40:47 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT DISTINCT country
+FROM `dimaddress`' at line 1 in F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT SELECT D...', 0)
+#1 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SELECT D...')
+#2 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SELECT D...')
+#3 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT SELECT D...', Array, false)
+#4 F:\Project\CodeIgniter\dashboard-dwo\app\Models\SalesModel.php(43): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\Project\CodeIgniter\dashboard-dwo\app\Controllers\Sales.php(26): App\Models\SalesModel->showCountry()
+#6 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Sales->address()
+#7 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#8 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\Project\CodeIgniter\dashboard-dwo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('F:\\Project\\Code...')
+#11 {main}
+CRITICAL - 2022-12-19 22:40:47 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELECT DISTINCT country
+FROM `dimaddress`' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT SELECT DISTINCT country
+FROM `dimaddress`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT SELECT DISTINCT country
+FROM `dimaddress`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT SELECT DISTINCT country
+FROM `dimaddress`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT SELECT DISTINCT country
+FROM `dimaddress`', [], false)
+ 5 APPPATH\Models\SalesModel.php(43): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Sales.php(26): App\Models\SalesModel->showCountry()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Sales->address()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-19 22:42:45 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'select distinct country from dimaddress
+FROM `dimaddress`' at line 1 in F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT select d...', 0)
+#1 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT select d...')
+#2 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT select d...')
+#3 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT select d...', Array, false)
+#4 F:\Project\CodeIgniter\dashboard-dwo\app\Models\SalesModel.php(42): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\Project\CodeIgniter\dashboard-dwo\app\Controllers\Sales.php(26): App\Models\SalesModel->showCountry()
+#6 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Sales->address()
+#7 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#8 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\Project\CodeIgniter\dashboard-dwo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('F:\\Project\\Code...')
+#11 {main}
+CRITICAL - 2022-12-19 22:42:45 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'select distinct country from dimaddress
+FROM `dimaddress`' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT select distinct country from dimaddress
+FROM `dimaddress`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT select distinct country from dimaddress
+FROM `dimaddress`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT select distinct country from dimaddress
+FROM `dimaddress`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT select distinct country from dimaddress
+FROM `dimaddress`', [], false)
+ 5 APPPATH\Models\SalesModel.php(42): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Sales.php(26): App\Models\SalesModel->showCountry()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Sales->address()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-19 22:43:06 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'select distinct country from dimaddress
+FROM `dimaddress`' at line 1 in F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT select d...', 0)
+#1 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT select d...')
+#2 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT select d...')
+#3 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT select d...', Array, false)
+#4 F:\Project\CodeIgniter\dashboard-dwo\app\Models\SalesModel.php(42): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\Project\CodeIgniter\dashboard-dwo\app\Controllers\Sales.php(26): App\Models\SalesModel->showCountry()
+#6 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Sales->address()
+#7 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#8 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\Project\CodeIgniter\dashboard-dwo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('F:\\Project\\Code...')
+#11 {main}
+CRITICAL - 2022-12-19 22:43:06 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'select distinct country from dimaddress
+FROM `dimaddress`' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT select distinct country from dimaddress
+FROM `dimaddress`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT select distinct country from dimaddress
+FROM `dimaddress`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT select distinct country from dimaddress
+FROM `dimaddress`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT select distinct country from dimaddress
+FROM `dimaddress`', [], false)
+ 5 APPPATH\Models\SalesModel.php(42): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Sales.php(26): App\Models\SalesModel->showCountry()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Sales->address()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-19 22:43:47 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'select distinct country
+FROM `dimaddress`' at line 1 in F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT select d...', 0)
+#1 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT select d...')
+#2 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT select d...')
+#3 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT select d...', Array, false)
+#4 F:\Project\CodeIgniter\dashboard-dwo\app\Models\SalesModel.php(42): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\Project\CodeIgniter\dashboard-dwo\app\Controllers\Sales.php(26): App\Models\SalesModel->showCountry()
+#6 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Sales->address()
+#7 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#8 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\Project\CodeIgniter\dashboard-dwo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('F:\\Project\\Code...')
+#11 {main}
+CRITICAL - 2022-12-19 22:43:47 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'select distinct country
+FROM `dimaddress`' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT select distinct country
+FROM `dimaddress`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT select distinct country
+FROM `dimaddress`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT select distinct country
+FROM `dimaddress`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT select distinct country
+FROM `dimaddress`', [], false)
+ 5 APPPATH\Models\SalesModel.php(42): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Sales.php(26): App\Models\SalesModel->showCountry()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Sales->address()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

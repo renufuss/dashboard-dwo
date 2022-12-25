@@ -1,0 +1,40 @@
+ERROR - 2022-12-24 10:39:50 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in D:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 D:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'dbdwofp', 3306, '', 0)
+#1 D:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\Project\CodeIgniter\dashboard-dwo\app\Models\SalesModel.php(42): CodeIgniter\Database\BaseConnection->query('SELECT country,...')
+#4 D:\Project\CodeIgniter\dashboard-dwo\app\Controllers\Sales.php(19): App\Models\SalesModel->showTopTransactionCountry()
+#5 D:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Sales->address()
+#6 D:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#7 D:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 D:\Project\CodeIgniter\dashboard-dwo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 D:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('D:\\Project\\Code...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in D:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 D:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\Project\CodeIgniter\dashboard-dwo\app\Models\SalesModel.php(42): CodeIgniter\Database\BaseConnection->query('SELECT country,...')
+#3 D:\Project\CodeIgniter\dashboard-dwo\app\Controllers\Sales.php(19): App\Models\SalesModel->showTopTransactionCountry()
+#4 D:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Sales->address()
+#5 D:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#6 D:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 D:\Project\CodeIgniter\dashboard-dwo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 D:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('D:\\Project\\Code...')
+#9 {main}
+CRITICAL - 2022-12-24 10:39:50 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\SalesModel.php(42): CodeIgniter\Database\BaseConnection->query('SELECT country, COUNT(*) as sales
+        FROM factsales
+        INNER JOIN dimaddress ON factsales.addressID = dimaddress.addressID 
+        GROUP BY country order by sales DESC limit 5')
+ 3 APPPATH\Controllers\Sales.php(19): App\Models\SalesModel->showTopTransactionCountry()
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Sales->address()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')

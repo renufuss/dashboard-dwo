@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Schema name="whaw">
+<Cube name="Production" defaultMeasure="totalQty">
+<Table name="FactProduction"/>
+    <Dimension name="Product" foreignKey ="productID">
+        <Hierarchy hasAll="true" allMemberName="All Product" primaryKey ="productID">
+            <Table name="dimproduct"/>
+            <Level name="CategorySubcategory" column="category"/>
+            <Level name="Product Color" column="color"/>    
+            <Level name="Product Name" column="name"/>
+            <Property name="Days to Manufacture" column="daystomanufacture"/>
+            <Property name="Standard Cost" column="standardCost"/>
+            <Property name="Product Color" column="size"/>
+        </Hierarchy>
+    </Dimension>
+
+      <Dimension name="Time" foreignKey="timeID">
+        <Hierarchy hasAll="true" allMemberName="All Times" primaryKey="timeID">
+            <Table name="dimtime"/>
+            <Level name="Year" column="year" type="Numeric" uniqueMembers="true" levelType="TimeYears"/>
+            <Level name="Month" column="month" uniqueMembers="false" type="Numeric" levelType="TimeMonths"/>
+            <Level name="Date" column="date" uniqueMembers="false" type="Numeric" levelType="TimeDays"/>
+        </Hierarchy>
+    </Dimension>
+    <Measure name="Total Quantity" column="totalQty" aggregator="sum"
+    formatString="Standard"/>
+</Cube>
+</Schema>

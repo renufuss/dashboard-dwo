@@ -1,0 +1,942 @@
+CRITICAL - 2022-12-20 00:28:43 --> Undefined array key "country"
+in APPPATH\Controllers\Sales.php on line 26.
+ 1 APPPATH\Controllers\Sales.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "country"', 'APPPATH\\Controllers\\Sales.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Sales->address()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 00:30:00 --> Undefined array key ""
+in APPPATH\Controllers\Sales.php on line 26.
+ 1 APPPATH\Controllers\Sales.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key ""', 'APPPATH\\Controllers\\Sales.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Sales->address()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 00:31:03 --> Undefined array key ""
+in APPPATH\Controllers\Sales.php on line 26.
+ 1 APPPATH\Controllers\Sales.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key ""', 'APPPATH\\Controllers\\Sales.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Sales->address()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 00:36:38 --> Undefined array key "country"
+in APPPATH\Controllers\Sales.php on line 26.
+ 1 APPPATH\Controllers\Sales.php(26): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "country"', 'APPPATH\\Controllers\\Sales.php', 26)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Sales->address()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 00:41:55 --> mysqli_result::fetch_object(): Argument #1 ($class) must be a valid class name, country given
+in SYSTEMPATH\Database\MySQLi\Result.php on line 148.
+ 1 SYSTEMPATH\Database\MySQLi\Result.php(148): mysqli_result->fetch_object('country')
+ 2 SYSTEMPATH\Database\BaseResult.php(149): CodeIgniter\Database\MySQLi\Result->fetchObject('country')
+ 3 APPPATH\Models\SalesModel.php(43): CodeIgniter\Database\BaseResult->getCustomResultObject('country')
+ 4 APPPATH\Controllers\Sales.php(26): App\Models\SalesModel->showCountry()
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Sales->address()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 00:42:13 --> mysqli_result::fetch_object(): Argument #1 ($class) must be a valid class name, 0 given
+in SYSTEMPATH\Database\MySQLi\Result.php on line 148.
+ 1 SYSTEMPATH\Database\MySQLi\Result.php(148): mysqli_result->fetch_object('0')
+ 2 SYSTEMPATH\Database\BaseResult.php(149): CodeIgniter\Database\MySQLi\Result->fetchObject('0')
+ 3 APPPATH\Models\SalesModel.php(43): CodeIgniter\Database\BaseResult->getCustomResultObject('0')
+ 4 APPPATH\Controllers\Sales.php(26): App\Models\SalesModel->showCountry()
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Sales->address()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 00:43:53 --> mysqli_result::fetch_object(): Argument #1 ($class) must be a valid class name, country given
+in SYSTEMPATH\Database\MySQLi\Result.php on line 148.
+ 1 SYSTEMPATH\Database\MySQLi\Result.php(148): mysqli_result->fetch_object('country')
+ 2 SYSTEMPATH\Database\BaseResult.php(149): CodeIgniter\Database\MySQLi\Result->fetchObject('country')
+ 3 SYSTEMPATH\Database\BaseResult.php(106): CodeIgniter\Database\BaseResult->getCustomResultObject('country')
+ 4 APPPATH\Models\SalesModel.php(43): CodeIgniter\Database\BaseResult->getResult('country')
+ 5 APPPATH\Controllers\Sales.php(26): App\Models\SalesModel->showCountry()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Sales->address()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-20 00:44:47 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DISTINCT country) as country FROM dimaddress limit 5' at line 1 in F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT (DISTINC...', 0)
+#1 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT (DISTINC...')
+#2 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT (DISTINC...')
+#3 F:\Project\CodeIgniter\dashboard-dwo\app\Models\SalesModel.php(41): CodeIgniter\Database\BaseConnection->query('SELECT (DISTINC...')
+#4 F:\Project\CodeIgniter\dashboard-dwo\app\Controllers\Sales.php(26): App\Models\SalesModel->showCountry()
+#5 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Sales->address()
+#6 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#7 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 F:\Project\CodeIgniter\dashboard-dwo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('F:\\Project\\Code...')
+#10 {main}
+CRITICAL - 2022-12-20 00:44:47 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DISTINCT country) as country FROM dimaddress limit 5' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT (DISTINCT country) as country FROM dimaddress limit 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT (DISTINCT country) as country FROM dimaddress limit 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT (DISTINCT country) as country FROM dimaddress limit 5')
+ 4 APPPATH\Models\SalesModel.php(41): CodeIgniter\Database\BaseConnection->query('SELECT (DISTINCT country) as country FROM dimaddress limit 5')
+ 5 APPPATH\Controllers\Sales.php(26): App\Models\SalesModel->showCountry()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Sales->address()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 00:45:03 --> mysqli_result::fetch_object(): Argument #1 ($class) must be a valid class name, country given
+in SYSTEMPATH\Database\MySQLi\Result.php on line 148.
+ 1 SYSTEMPATH\Database\MySQLi\Result.php(148): mysqli_result->fetch_object('country')
+ 2 SYSTEMPATH\Database\BaseResult.php(149): CodeIgniter\Database\MySQLi\Result->fetchObject('country')
+ 3 SYSTEMPATH\Database\BaseResult.php(106): CodeIgniter\Database\BaseResult->getCustomResultObject('country')
+ 4 APPPATH\Models\SalesModel.php(43): CodeIgniter\Database\BaseResult->getResult('country')
+ 5 APPPATH\Controllers\Sales.php(26): App\Models\SalesModel->showCountry()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Sales->address()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-20 00:45:17 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DISTINCT country as country) FROM dimaddress limit 5' at line 1 in F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT (DISTINC...', 0)
+#1 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT (DISTINC...')
+#2 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT (DISTINC...')
+#3 F:\Project\CodeIgniter\dashboard-dwo\app\Models\SalesModel.php(41): CodeIgniter\Database\BaseConnection->query('SELECT (DISTINC...')
+#4 F:\Project\CodeIgniter\dashboard-dwo\app\Controllers\Sales.php(26): App\Models\SalesModel->showCountry()
+#5 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Sales->address()
+#6 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#7 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 F:\Project\CodeIgniter\dashboard-dwo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('F:\\Project\\Code...')
+#10 {main}
+CRITICAL - 2022-12-20 00:45:17 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DISTINCT country as country) FROM dimaddress limit 5' at line 1
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT (DISTINCT country as country) FROM dimaddress limit 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT (DISTINCT country as country) FROM dimaddress limit 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT (DISTINCT country as country) FROM dimaddress limit 5')
+ 4 APPPATH\Models\SalesModel.php(41): CodeIgniter\Database\BaseConnection->query('SELECT (DISTINCT country as country) FROM dimaddress limit 5')
+ 5 APPPATH\Controllers\Sales.php(26): App\Models\SalesModel->showCountry()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Sales->address()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-20 01:30:17 --> mysqli_sql_exception: Unknown column '$country' in 'where clause' in F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT country,...', 0)
+#1 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT country,...')
+#2 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT country,...')
+#3 F:\Project\CodeIgniter\dashboard-dwo\app\Models\SalesModel.php(56): CodeIgniter\Database\BaseConnection->query('SELECT country,...')
+#4 F:\Project\CodeIgniter\dashboard-dwo\app\Controllers\Sales.php(26): App\Models\SalesModel->showSalesCityCountry('California')
+#5 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Sales->address()
+#6 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#7 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 F:\Project\CodeIgniter\dashboard-dwo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('F:\\Project\\Code...')
+#10 {main}
+CRITICAL - 2022-12-20 01:30:17 --> Unknown column '$country' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT country, city, COUNT(*) as sales
+        FROM factsales
+        INNER JOIN dimaddress ON factsales.addressID = dimaddress.addressID 
+        WHERE country = $country
+        GROUP BY city order by sales DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT country, city, COUNT(*) as sales
+        FROM factsales
+        INNER JOIN dimaddress ON factsales.addressID = dimaddress.addressID 
+        WHERE country = $country
+        GROUP BY city order by sales DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT country, city, COUNT(*) as sales
+        FROM factsales
+        INNER JOIN dimaddress ON factsales.addressID = dimaddress.addressID 
+        WHERE country = $country
+        GROUP BY city order by sales DESC')
+ 4 APPPATH\Models\SalesModel.php(56): CodeIgniter\Database\BaseConnection->query('SELECT country, city, COUNT(*) as sales
+        FROM factsales
+        INNER JOIN dimaddress ON factsales.addressID = dimaddress.addressID 
+        WHERE country = $country
+        GROUP BY city order by sales DESC')
+ 5 APPPATH\Controllers\Sales.php(26): App\Models\SalesModel->showSalesCityCountry('California')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Sales->address()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-20 01:33:58 --> mysqli_sql_exception: Unknown column '$country' in 'where clause' in F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT country,...', 0)
+#1 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT country,...')
+#2 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT country,...')
+#3 F:\Project\CodeIgniter\dashboard-dwo\app\Models\SalesModel.php(56): CodeIgniter\Database\BaseConnection->query('SELECT country,...')
+#4 F:\Project\CodeIgniter\dashboard-dwo\app\Controllers\Sales.php(26): App\Models\SalesModel->showSalesCityCountry('California')
+#5 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Sales->address()
+#6 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#7 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 F:\Project\CodeIgniter\dashboard-dwo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('F:\\Project\\Code...')
+#10 {main}
+CRITICAL - 2022-12-20 01:33:58 --> Unknown column '$country' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT country, city, COUNT(*) as sales
+        FROM factsales
+        INNER JOIN dimaddress ON factsales.addressID = dimaddress.addressID 
+        WHERE country = $country
+        GROUP BY city order by sales DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT country, city, COUNT(*) as sales
+        FROM factsales
+        INNER JOIN dimaddress ON factsales.addressID = dimaddress.addressID 
+        WHERE country = $country
+        GROUP BY city order by sales DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT country, city, COUNT(*) as sales
+        FROM factsales
+        INNER JOIN dimaddress ON factsales.addressID = dimaddress.addressID 
+        WHERE country = $country
+        GROUP BY city order by sales DESC')
+ 4 APPPATH\Models\SalesModel.php(56): CodeIgniter\Database\BaseConnection->query('SELECT country, city, COUNT(*) as sales
+        FROM factsales
+        INNER JOIN dimaddress ON factsales.addressID = dimaddress.addressID 
+        WHERE country = $country
+        GROUP BY city order by sales DESC')
+ 5 APPPATH\Controllers\Sales.php(26): App\Models\SalesModel->showSalesCityCountry('California')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Sales->address()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-20 01:34:15 --> mysqli_sql_exception: Not unique table/alias: 'factsales' in F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `country...', 0)
+#1 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `country...')
+#2 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `country...')
+#3 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `country...', Array, false)
+#4 F:\Project\CodeIgniter\dashboard-dwo\app\Models\SalesModel.php(59): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\Project\CodeIgniter\dashboard-dwo\app\Controllers\Sales.php(26): App\Models\SalesModel->showSalesCityCountry('California')
+#6 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Sales->address()
+#7 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#8 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\Project\CodeIgniter\dashboard-dwo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('F:\\Project\\Code...')
+#11 {main}
+CRITICAL - 2022-12-20 01:34:15 --> Not unique table/alias: 'factsales'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `country`, `city`, count(*) as sales
+FROM `factsales`
+INNER JOIN `factsales` ON `factsales`.`addressID`=`dimaddress`.`addressID`
+WHERE `country` = \'California\'
+GROUP BY `city`
+ORDER BY `sales` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `country`, `city`, count(*) as sales
+FROM `factsales`
+INNER JOIN `factsales` ON `factsales`.`addressID`=`dimaddress`.`addressID`
+WHERE `country` = \'California\'
+GROUP BY `city`
+ORDER BY `sales` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `country`, `city`, count(*) as sales
+FROM `factsales`
+INNER JOIN `factsales` ON `factsales`.`addressID`=`dimaddress`.`addressID`
+WHERE `country` = \'California\'
+GROUP BY `city`
+ORDER BY `sales` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `country`, `city`, count(*) as sales
+FROM `factsales`
+INNER JOIN `factsales` ON `factsales`.`addressID`=`dimaddress`.`addressID`
+WHERE `country` = :country:
+GROUP BY `city`
+ORDER BY `sales` DESC', [...], false)
+ 5 APPPATH\Models\SalesModel.php(59): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Sales.php(26): App\Models\SalesModel->showSalesCityCountry('California')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Sales->address()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 01:49:12 --> Call to undefined method App\Models\SalesModel::showSalesCityCountry
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Sales.php(26): CodeIgniter\Model->__call('showSalesCityCountry', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Sales->address()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 02:17:08 --> Undefined variable $topSalesCountry
+in APPPATH\Controllers\Sales.php on line 31.
+ 1 APPPATH\Controllers\Sales.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $topSalesCountry', 'APPPATH\\Controllers\\Sales.php', 31)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Sales->address()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 02:28:05 --> Undefined property: stdClass::$sales
+in APPPATH\Controllers\Sales.php on line 33.
+ 1 APPPATH\Controllers\Sales.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$sales', 'APPPATH\\Controllers\\Sales.php', 33)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Sales->address()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-20 02:28:20 --> mysqli_sql_exception: Unknown column 'sales' in 'order clause' in F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT country,...', 0)
+#1 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT country,...')
+#2 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT country,...')
+#3 F:\Project\CodeIgniter\dashboard-dwo\app\Models\SalesModel.php(44): CodeIgniter\Database\BaseConnection->query('SELECT country,...')
+#4 F:\Project\CodeIgniter\dashboard-dwo\app\Controllers\Sales.php(27): App\Models\SalesModel->showTopSalesCountry()
+#5 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Sales->address()
+#6 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#7 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 F:\Project\CodeIgniter\dashboard-dwo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('F:\\Project\\Code...')
+#10 {main}
+CRITICAL - 2022-12-20 02:28:20 --> Unknown column 'sales' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT country, COUNT(*) as visits
+        FROM factsales
+        INNER JOIN dimaddress ON factsales.addressID = dimaddress.addressID 
+        GROUP BY country order by sales DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT country, COUNT(*) as visits
+        FROM factsales
+        INNER JOIN dimaddress ON factsales.addressID = dimaddress.addressID 
+        GROUP BY country order by sales DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT country, COUNT(*) as visits
+        FROM factsales
+        INNER JOIN dimaddress ON factsales.addressID = dimaddress.addressID 
+        GROUP BY country order by sales DESC')
+ 4 APPPATH\Models\SalesModel.php(44): CodeIgniter\Database\BaseConnection->query('SELECT country, COUNT(*) as visits
+        FROM factsales
+        INNER JOIN dimaddress ON factsales.addressID = dimaddress.addressID 
+        GROUP BY country order by sales DESC')
+ 5 APPPATH\Controllers\Sales.php(27): App\Models\SalesModel->showTopSalesCountry()
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Sales->address()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 04:06:25 --> array_push(): Argument #1 ($array) must be of type array, null given
+in APPPATH\Controllers\Sales.php on line 54.
+ 1 APPPATH\Controllers\Sales.php(54): array_push(null, '13741')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Sales->salesCityChart()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 04:06:41 --> array_push(): Argument #1 ($array) must be of type array, null given
+in APPPATH\Controllers\Sales.php on line 54.
+ 1 APPPATH\Controllers\Sales.php(54): array_push(null, '13741')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Sales->salesCityChart()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 04:40:11 --> syntax error, unexpected variable "$topSalesCountry"
+in APPPATH\Controllers\Sales.php on line 27.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(259): CodeIgniter\Autoloader\Autoloader->includeFile('APPPATH\\Controllers\\Sales.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(237): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Sales')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Sales')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\Sales', true)
+ 5 SYSTEMPATH\CodeIgniter.php(469): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 04:59:02 --> Undefined variable $totalSales
+in APPPATH\Views\Sales\Product\index.php on line 60.
+ 1 APPPATH\Views\Sales\Product\index.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $totalSales', 'APPPATH\\Views\\Sales\\Product\\index.php', 60)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Sales\\Product\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Sales/Product/index', [], true)
+ 5 APPPATH\Controllers\Sales.php(66): view('Sales/Product/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Sales->product()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 05:41:11 --> Call to undefined method App\Models\SalesModel::totalSales
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Sales.php(65): CodeIgniter\Model->__call('totalSales', [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Sales->product()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 05:41:26 --> Call to undefined method App\Models\SalesModel::totalSalesCity
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Sales.php(55): CodeIgniter\Model->__call('totalSalesCity', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Sales->salesCityChart()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 05:41:46 --> Call to undefined method App\Models\SalesModel::totalSalesCity
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Sales.php(55): CodeIgniter\Model->__call('totalSalesCity', [...])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Sales->salesCityChart()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 05:47:09 --> Call to undefined method App\Models\SalesModel::totalSales
+in SYSTEMPATH\Model.php on line 774.
+ 1 APPPATH\Controllers\Sales.php(63): CodeIgniter\Model->__call('totalSales', [])
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Sales->product()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-20 05:47:32 --> mysqli_sql_exception: Unknown column 'country' in 'field list' in F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `country...', 0)
+#1 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `country...')
+#2 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `country...')
+#3 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `country...', Array, false)
+#4 F:\Project\CodeIgniter\dashboard-dwo\app\Models\SalesModel.php(92): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\Project\CodeIgniter\dashboard-dwo\app\Controllers\Sales.php(63): App\Models\SalesModel->totalSalesProduct()
+#6 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Sales->product()
+#7 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#8 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\Project\CodeIgniter\dashboard-dwo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('F:\\Project\\Code...')
+#11 {main}
+CRITICAL - 2022-12-20 05:47:32 --> Unknown column 'country' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `country`, `city`, count(*) as sales
+FROM `factsales`
+INNER JOIN `dimproduct` ON `factsales`.`productID`=`dimproduct`.`productID`
+GROUP BY `name`
+ORDER BY `sales` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `country`, `city`, count(*) as sales
+FROM `factsales`
+INNER JOIN `dimproduct` ON `factsales`.`productID`=`dimproduct`.`productID`
+GROUP BY `name`
+ORDER BY `sales` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `country`, `city`, count(*) as sales
+FROM `factsales`
+INNER JOIN `dimproduct` ON `factsales`.`productID`=`dimproduct`.`productID`
+GROUP BY `name`
+ORDER BY `sales` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `country`, `city`, count(*) as sales
+FROM `factsales`
+INNER JOIN `dimproduct` ON `factsales`.`productID`=`dimproduct`.`productID`
+GROUP BY `name`
+ORDER BY `sales` DESC', [], false)
+ 5 APPPATH\Models\SalesModel.php(92): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Sales.php(63): App\Models\SalesModel->totalSalesProduct()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Sales->product()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 05:56:46 --> array_push(): Argument #1 ($array) must be of type array, null given
+in APPPATH\Controllers\Sales.php on line 69.
+ 1 APPPATH\Controllers\Sales.php(69): array_push(null, '78097')
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Sales->product()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 05:58:42 --> Array to string conversion
+in APPPATH\Views\Sales\Product\index.php on line 145.
+ 1 APPPATH\Views\Sales\Product\index.php(145): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\Sales\\Product\\index.php', 145)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Sales\\Product\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Sales/Product/index', [], true)
+ 5 APPPATH\Controllers\Sales.php(77): view('Sales/Product/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Sales->product()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 06:01:56 --> Object of class stdClass could not be converted to string
+in APPPATH\Views\Sales\Product\index.php on line 60.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Sales/Product/index', [], true)
+ 4 APPPATH\Controllers\Sales.php(78): view('Sales/Product/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Sales->product()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 06:56:28 --> Undefined property: stdClass::$name
+in APPPATH\Views\Sales\Product\index.php on line 89.
+ 1 APPPATH\Views\Sales\Product\index.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$name', 'APPPATH\\Views\\Sales\\Product\\index.php', 89)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Sales\\Product\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Sales/Product/index', [], true)
+ 5 APPPATH\Controllers\Sales.php(79): view('Sales/Product/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Sales->product()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 06:57:05 --> Undefined property: stdClass::$name
+in APPPATH\Views\Sales\Product\index.php on line 89.
+ 1 APPPATH\Views\Sales\Product\index.php(89): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$name', 'APPPATH\\Views\\Sales\\Product\\index.php', 89)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Sales\\Product\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Sales/Product/index', [], true)
+ 5 APPPATH\Controllers\Sales.php(79): view('Sales/Product/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Sales->product()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-20 06:58:35 --> mysqli_sql_exception: Unknown column 'country' in 'field list' in F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `name`, ...', 0)
+#1 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `name`, ...')
+#2 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `name`, ...')
+#3 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `name`, ...', Array, false)
+#4 F:\Project\CodeIgniter\dashboard-dwo\app\Models\SalesModel.php(123): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\Project\CodeIgniter\dashboard-dwo\app\Controllers\Sales.php(63): App\Models\SalesModel->countrySalesProduct()
+#6 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Sales->product()
+#7 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#8 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\Project\CodeIgniter\dashboard-dwo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('F:\\Project\\Code...')
+#11 {main}
+CRITICAL - 2022-12-20 06:58:35 --> Unknown column 'country' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `name`, `country`, sum(orderQty)
+FROM `factsales`
+INNER JOIN `dimproduct` ON `factsales`.`productID`=`dimproduct`.`productID`
+INNER JOIN `dimtime` ON `factsales`.`timeID`=`dimtime`.`timeID`
+GROUP BY `country`, `name`
+ORDER BY `name` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `name`, `country`, sum(orderQty)
+FROM `factsales`
+INNER JOIN `dimproduct` ON `factsales`.`productID`=`dimproduct`.`productID`
+INNER JOIN `dimtime` ON `factsales`.`timeID`=`dimtime`.`timeID`
+GROUP BY `country`, `name`
+ORDER BY `name` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `name`, `country`, sum(orderQty)
+FROM `factsales`
+INNER JOIN `dimproduct` ON `factsales`.`productID`=`dimproduct`.`productID`
+INNER JOIN `dimtime` ON `factsales`.`timeID`=`dimtime`.`timeID`
+GROUP BY `country`, `name`
+ORDER BY `name` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `name`, `country`, sum(orderQty)
+FROM `factsales`
+INNER JOIN `dimproduct` ON `factsales`.`productID`=`dimproduct`.`productID`
+INNER JOIN `dimtime` ON `factsales`.`timeID`=`dimtime`.`timeID`
+GROUP BY `country`, `name`
+ORDER BY `name` ASC', [], false)
+ 5 APPPATH\Models\SalesModel.php(123): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Sales.php(63): App\Models\SalesModel->countrySalesProduct()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Sales->product()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 07:00:52 --> Too few arguments to function App\Models\SalesModel::countrySalesProduct(), 0 passed in F:\Project\CodeIgniter\dashboard-dwo\app\Controllers\Sales.php on line 63 and exactly 1 expected
+in APPPATH\Models\SalesModel.php on line 114.
+ 1 APPPATH\Controllers\Sales.php(63): App\Models\SalesModel->countrySalesProduct()
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Sales->product()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-20 07:52:21 --> mysqli_sql_exception: Unknown column 'day' in 'field list' in F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `day`, s...', 0)
+#1 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `day`, s...')
+#2 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `day`, s...')
+#3 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `day`, s...', Array, false)
+#4 F:\Project\CodeIgniter\dashboard-dwo\app\Models\SalesModel.php(135): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\Project\CodeIgniter\dashboard-dwo\app\Controllers\Sales.php(107): App\Models\SalesModel->showLineTotalDay()
+#6 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Sales->time()
+#7 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#8 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\Project\CodeIgniter\dashboard-dwo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('F:\\Project\\Code...')
+#11 {main}
+CRITICAL - 2022-12-20 07:52:21 --> Unknown column 'day' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `day`, sum(lineTotal) as sales
+FROM `factsales`
+INNER JOIN `dimaddress` ON `factsales`.`addressID`=`dimaddress`.`addressID`
+GROUP BY `day`
+ORDER BY `sales` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `day`, sum(lineTotal) as sales
+FROM `factsales`
+INNER JOIN `dimaddress` ON `factsales`.`addressID`=`dimaddress`.`addressID`
+GROUP BY `day`
+ORDER BY `sales` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `day`, sum(lineTotal) as sales
+FROM `factsales`
+INNER JOIN `dimaddress` ON `factsales`.`addressID`=`dimaddress`.`addressID`
+GROUP BY `day`
+ORDER BY `sales` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `day`, sum(lineTotal) as sales
+FROM `factsales`
+INNER JOIN `dimaddress` ON `factsales`.`addressID`=`dimaddress`.`addressID`
+GROUP BY `day`
+ORDER BY `sales` DESC', [], false)
+ 5 APPPATH\Models\SalesModel.php(135): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Sales.php(107): App\Models\SalesModel->showLineTotalDay()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Sales->time()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-20 07:57:10 --> mysqli_sql_exception: Unknown column 'sales' in 'order clause' in F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `day`, s...', 0)
+#1 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `day`, s...')
+#2 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `day`, s...')
+#3 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `day`, s...', Array, false)
+#4 F:\Project\CodeIgniter\dashboard-dwo\app\Models\SalesModel.php(135): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\Project\CodeIgniter\dashboard-dwo\app\Controllers\Sales.php(107): App\Models\SalesModel->showLineTotalDay()
+#6 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Sales->time()
+#7 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+#8 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\Project\CodeIgniter\dashboard-dwo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('F:\\Project\\Code...')
+#11 {main}
+CRITICAL - 2022-12-20 07:57:10 --> Unknown column 'sales' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `day`, sum(lineTotal) as lineTotal
+FROM `factsales`
+INNER JOIN `dimtime` ON `factsales`.`timeID`=`dimtime`.`timeID`
+GROUP BY `day`
+ORDER BY `sales` DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `day`, sum(lineTotal) as lineTotal
+FROM `factsales`
+INNER JOIN `dimtime` ON `factsales`.`timeID`=`dimtime`.`timeID`
+GROUP BY `day`
+ORDER BY `sales` DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `day`, sum(lineTotal) as lineTotal
+FROM `factsales`
+INNER JOIN `dimtime` ON `factsales`.`timeID`=`dimtime`.`timeID`
+GROUP BY `day`
+ORDER BY `sales` DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `day`, sum(lineTotal) as lineTotal
+FROM `factsales`
+INNER JOIN `dimtime` ON `factsales`.`timeID`=`dimtime`.`timeID`
+GROUP BY `day`
+ORDER BY `sales` DESC', [], false)
+ 5 APPPATH\Models\SalesModel.php(135): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Sales.php(107): App\Models\SalesModel->showLineTotalDay()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Sales->time()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 08:00:05 --> Array to string conversion
+in APPPATH\Views\Sales\Time\index.php on line 60.
+ 1 APPPATH\Views\Sales\Time\index.php(60): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Array to string conversion', 'APPPATH\\Views\\Sales\\Time\\index.php', 60)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Sales\\Time\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Sales/Time/index', [], true)
+ 5 APPPATH\Controllers\Sales.php(123): view('Sales/Time/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Sales->time()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 08:00:59 --> Object of class stdClass could not be converted to string
+in APPPATH\Views\Sales\Time\index.php on line 60.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Sales/Time/index', [], true)
+ 4 APPPATH\Controllers\Sales.php(123): view('Sales/Time/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Sales->time()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Sales))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 11:00:19 --> Undefined property: stdClass::$totalQty
+in APPPATH\Controllers\Production.php on line 24.
+ 1 APPPATH\Controllers\Production.php(24): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$totalQty', 'APPPATH\\Controllers\\Production.php', 24)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Production->product()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Production))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-20 11:06:30 --> mysqli_sql_exception: FUNCTION dbdwofp.um does not exist in F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT um(total...', 0)
+#1 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT um(total...')
+#2 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT um(total...')
+#3 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT um(total...', Array, false)
+#4 F:\Project\CodeIgniter\dashboard-dwo\app\Models\ProductionModel.php(45): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\Project\CodeIgniter\dashboard-dwo\app\Controllers\Production.php(30): App\Models\ProductionModel->showTotalQTY()
+#6 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Production->product()
+#7 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Production))
+#8 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\Project\CodeIgniter\dashboard-dwo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('F:\\Project\\Code...')
+#11 {main}
+CRITICAL - 2022-12-20 11:06:30 --> FUNCTION dbdwofp.um does not exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT um(totalQty) as totalQTY
+FROM `factproduction`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT um(totalQty) as totalQTY
+FROM `factproduction`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT um(totalQty) as totalQTY
+FROM `factproduction`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT um(totalQty) as totalQTY
+FROM `factproduction`', [], false)
+ 5 APPPATH\Models\ProductionModel.php(45): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Production.php(30): App\Models\ProductionModel->showTotalQTY()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Production->product()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Production))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 11:06:53 --> Object of class stdClass could not be converted to string
+in APPPATH\Views\Production\Product\index.php on line 60.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Production/Product/index', [], true)
+ 4 APPPATH\Controllers\Production.php(33): view('Production/Product/index', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Production->product()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Production))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 11:07:06 --> Undefined property: stdClass::$showTotalQTY
+in APPPATH\Controllers\Production.php on line 30.
+ 1 APPPATH\Controllers\Production.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$showTotalQTY', 'APPPATH\\Controllers\\Production.php', 30)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Production->product()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Production))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 11:16:43 --> Undefined variable $showDay
+in APPPATH\Views\Production\Product\index.php on line 88.
+ 1 APPPATH\Views\Production\Product\index.php(88): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $showDay', 'APPPATH\\Views\\Production\\Product\\index.php', 88)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Production\\Product\\index.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Production/Product/index', [], true)
+ 5 APPPATH\Controllers\Production.php(34): view('Production/Product/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Production->product()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Production))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 11:30:18 --> Undefined variable $sales
+in APPPATH\Views\Sales\Product\Chart\countrySalesProduct.php on line 16.
+ 1 APPPATH\Views\Sales\Product\Chart\countrySalesProduct.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sales', 'APPPATH\\Views\\Sales\\Product\\Chart\\countrySalesProduct.php', 16)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Sales\\Product\\Chart\\countrySalesProduct.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Sales/Product/Chart/countrySalesProduct', [], true)
+ 5 APPPATH\Controllers\Production.php(56): view('Sales/Product/Chart/countrySalesProduct', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Production->showDayProduction()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Production))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 11:31:03 --> Undefined variable $sales
+in APPPATH\Views\Sales\Product\Chart\countrySalesProduct.php on line 16.
+ 1 APPPATH\Views\Sales\Product\Chart\countrySalesProduct.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sales', 'APPPATH\\Views\\Sales\\Product\\Chart\\countrySalesProduct.php', 16)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Sales\\Product\\Chart\\countrySalesProduct.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Sales/Product/Chart/countrySalesProduct', [], true)
+ 5 APPPATH\Controllers\Production.php(56): view('Sales/Product/Chart/countrySalesProduct', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Production->showDayProduction()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Production))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 11:31:25 --> Undefined variable $sales
+in APPPATH\Views\Sales\Product\Chart\countrySalesProduct.php on line 16.
+ 1 APPPATH\Views\Sales\Product\Chart\countrySalesProduct.php(16): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $sales', 'APPPATH\\Views\\Sales\\Product\\Chart\\countrySalesProduct.php', 16)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Sales\\Product\\Chart\\countrySalesProduct.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Sales/Product/Chart/countrySalesProduct', [], true)
+ 5 APPPATH\Controllers\Production.php(56): view('Sales/Product/Chart/countrySalesProduct', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Production->showDayProduction()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Production))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-20 12:31:17 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC' at line 5 in F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `day`, s...', 0)
+#1 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `day`, s...')
+#2 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `day`, s...')
+#3 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `day`, s...', Array, false)
+#4 F:\Project\CodeIgniter\dashboard-dwo\app\Models\ProductionModel.php(79): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\Project\CodeIgniter\dashboard-dwo\app\Controllers\Production.php(63): App\Models\ProductionModel->showDayQTY()
+#6 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Production->time()
+#7 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Production))
+#8 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\Project\CodeIgniter\dashboard-dwo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('F:\\Project\\Code...')
+#11 {main}
+CRITICAL - 2022-12-20 12:31:17 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DESC' at line 5
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `day`, sum(totalQTY) as totalQTY
+FROM `factproduction`
+INNER JOIN `dimtime` ON `factproduction`.`timeID`=`dimtime`.`timeID`
+GROUP BY `day`
+ORDER BY `totalQTY`,  DESC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `day`, sum(totalQTY) as totalQTY
+FROM `factproduction`
+INNER JOIN `dimtime` ON `factproduction`.`timeID`=`dimtime`.`timeID`
+GROUP BY `day`
+ORDER BY `totalQTY`,  DESC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `day`, sum(totalQTY) as totalQTY
+FROM `factproduction`
+INNER JOIN `dimtime` ON `factproduction`.`timeID`=`dimtime`.`timeID`
+GROUP BY `day`
+ORDER BY `totalQTY`,  DESC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `day`, sum(totalQTY) as totalQTY
+FROM `factproduction`
+INNER JOIN `dimtime` ON `factproduction`.`timeID`=`dimtime`.`timeID`
+GROUP BY `day`
+ORDER BY `totalQTY`,  DESC', [], false)
+ 5 APPPATH\Models\ProductionModel.php(79): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Production.php(63): App\Models\ProductionModel->showDayQTY()
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Production->time()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Production))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2022-12-20 12:41:26 --> mysqli_sql_exception: Unknown column 'orderQTY' in 'field list' in F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `name`, ...', 0)
+#1 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `name`, ...')
+#2 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `name`, ...')
+#3 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `name`, ...', Array, false)
+#4 F:\Project\CodeIgniter\dashboard-dwo\app\Models\ProductionModel.php(103): CodeIgniter\Database\BaseBuilder->get()
+#5 F:\Project\CodeIgniter\dashboard-dwo\app\Controllers\Production.php(63): App\Models\ProductionModel->showProductDay('Monday')
+#6 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(927): App\Controllers\Production->time()
+#7 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Production))
+#8 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 F:\Project\CodeIgniter\dashboard-dwo\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 F:\Project\CodeIgniter\dashboard-dwo\vendor\codeigniter4\framework\system\Commands\Server\rewrite.php(46): require_once('F:\\Project\\Code...')
+#11 {main}
+CRITICAL - 2022-12-20 12:41:26 --> Unknown column 'orderQTY' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('SELECT `name`, sum(orderQTY) as orderQTY
+FROM `factproduction`
+INNER JOIN `dimproduct` ON `factproduction`.`productID`=`dimproduct`.`productID`
+INNER JOIN `dimtime` ON `factproduction`.`timeID`=`dimtime`.`timeID`
+WHERE `day` = \'Monday\'
+GROUP BY `factproduction`.`productID`
+ORDER BY `name` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `name`, sum(orderQTY) as orderQTY
+FROM `factproduction`
+INNER JOIN `dimproduct` ON `factproduction`.`productID`=`dimproduct`.`productID`
+INNER JOIN `dimtime` ON `factproduction`.`timeID`=`dimtime`.`timeID`
+WHERE `day` = \'Monday\'
+GROUP BY `factproduction`.`productID`
+ORDER BY `name` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `name`, sum(orderQTY) as orderQTY
+FROM `factproduction`
+INNER JOIN `dimproduct` ON `factproduction`.`productID`=`dimproduct`.`productID`
+INNER JOIN `dimtime` ON `factproduction`.`timeID`=`dimtime`.`timeID`
+WHERE `day` = \'Monday\'
+GROUP BY `factproduction`.`productID`
+ORDER BY `name` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT `name`, sum(orderQTY) as orderQTY
+FROM `factproduction`
+INNER JOIN `dimproduct` ON `factproduction`.`productID`=`dimproduct`.`productID`
+INNER JOIN `dimtime` ON `factproduction`.`timeID`=`dimtime`.`timeID`
+WHERE `day` = :day:
+GROUP BY `factproduction`.`productID`
+ORDER BY `name` ASC', [...], false)
+ 5 APPPATH\Models\ProductionModel.php(103): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Production.php(63): App\Models\ProductionModel->showProductDay('Monday')
+ 7 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Production->time()
+ 8 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Production))
+ 9 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 12:48:07 --> Undefined property: stdClass::$totalQTY
+in APPPATH\Controllers\Production.php on line 92.
+ 1 APPPATH\Controllers\Production.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$totalQTY', 'APPPATH\\Controllers\\Production.php', 92)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Production->showProductDay()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Production))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 12:48:15 --> Undefined property: stdClass::$totalQTY
+in APPPATH\Controllers\Production.php on line 92.
+ 1 APPPATH\Controllers\Production.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$totalQTY', 'APPPATH\\Controllers\\Production.php', 92)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Production->showProductDay()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Production))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 12:49:56 --> Too few arguments to function App\Models\ProductionModel::showProductDay(), 0 passed in F:\Project\CodeIgniter\dashboard-dwo\app\Controllers\Production.php on line 63 and exactly 1 expected
+in APPPATH\Models\ProductionModel.php on line 93.
+ 1 APPPATH\Controllers\Production.php(63): App\Models\ProductionModel->showProductDay()
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Production->time()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Production))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 12:51:06 --> Undefined property: stdClass::$totalQTY
+in APPPATH\Controllers\Production.php on line 92.
+ 1 APPPATH\Controllers\Production.php(92): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: stdClass::$totalQTY', 'APPPATH\\Controllers\\Production.php', 92)
+ 2 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Production->showProductDay()
+ 3 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Production))
+ 4 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 12:51:52 --> Undefined variable $product
+in APPPATH\Views\Production\Time\Chart\showProductDay.php on line 13.
+ 1 APPPATH\Views\Production\Time\Chart\showProductDay.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product', 'APPPATH\\Views\\Production\\Time\\Chart\\showProductDay.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Production\\Time\\Chart\\showProductDay.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Production/Time/Chart/showProductDay', [], true)
+ 5 APPPATH\Controllers\Production.php(100): view('Production/Time/Chart/showProductDay', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Production->showProductDay()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Production))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 12:52:26 --> Undefined variable $product
+in APPPATH\Views\Production\Time\Chart\showProductDay.php on line 13.
+ 1 APPPATH\Views\Production\Time\Chart\showProductDay.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product', 'APPPATH\\Views\\Production\\Time\\Chart\\showProductDay.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Production\\Time\\Chart\\showProductDay.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Production/Time/Chart/showProductDay', [], true)
+ 5 APPPATH\Controllers\Production.php(100): view('Production/Time/Chart/showProductDay', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Production->showProductDay()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Production))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 12:54:02 --> Undefined variable $product
+in APPPATH\Views\Production\Time\Chart\showProductDay.php on line 13.
+ 1 APPPATH\Views\Production\Time\Chart\showProductDay.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product', 'APPPATH\\Views\\Production\\Time\\Chart\\showProductDay.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Production\\Time\\Chart\\showProductDay.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Production/Time/Chart/showProductDay', [], true)
+ 5 APPPATH\Controllers\Production.php(100): view('Production/Time/Chart/showProductDay', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Production->showProductDay()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Production))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 12:54:41 --> Undefined variable $day
+in APPPATH\Views\Production\Product\Chart\showDayProduction.php on line 13.
+ 1 APPPATH\Views\Production\Product\Chart\showDayProduction.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $day', 'APPPATH\\Views\\Production\\Product\\Chart\\showDayProduction.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Production\\Product\\Chart\\showDayProduction.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Production/Product/Chart/showDayProduction', [], true)
+ 5 APPPATH\Controllers\Production.php(56): view('Production/Product/Chart/showDayProduction', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Production->showDayProduction()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Production))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2022-12-20 12:54:53 --> Undefined variable $day
+in APPPATH\Views\Production\Product\Chart\showDayProduction.php on line 13.
+ 1 APPPATH\Views\Production\Product\Chart\showDayProduction.php(13): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $day', 'APPPATH\\Views\\Production\\Product\\Chart\\showDayProduction.php', 13)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\Production\\Product\\Chart\\showDayProduction.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('Production/Product/Chart/showDayProduction', [], true)
+ 5 APPPATH\Controllers\Production.php(56): view('Production/Product/Chart/showDayProduction', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Production->showDayProduction()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Production))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
