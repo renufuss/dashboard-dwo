@@ -1,7 +1,7 @@
 /*README*/
 Tutorial menjalankan dashboard DWO
 <ol>
-<li>Install XAMPP & Composer & GitBash</li>
+<li>Install XAMPP, Composer, dan GitBash</li>
 <li>masuk ke folder XAMPP/htdocs</li>
 <li>click-kanan pada folder pilih opsi git bash here</li>
 <li>ketik "git clone https://github.com/renufuss/dashboard-dwo" tekan enter</li>
