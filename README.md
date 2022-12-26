@@ -19,4 +19,5 @@ Tutorial menjalankan dashboard DWO
 <li>Selesai!</li>
 </ol>
 
+#Pastikan config xampp (intl) diaktifkan#
 #JIKA TERJADI ERROR PADA JDBC COPY FILE "mysql-connector-j-8.0.31.jar" DARI FOLDER OLAP DWO KE FOLDER xampp/tomcat/lib#
